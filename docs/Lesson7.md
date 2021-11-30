@@ -5,7 +5,7 @@ OK, let's go:
 
 1. Define a config file with the data needed by the categories screen. The host for the feeds and server is another value we don't want hardcoded into the application (it changed several times when authoring this course), so the config will include a property for that, too.  
 Create a directory in the root of the application (alongside the manifest) called `resources` and inside it, add a file called `config.json` with the following contents:  
-
+(where host ip would be ip of our server- your PC ip)
     ``` JSON
     {
       "host": "http://192.168.1.86:8888",
