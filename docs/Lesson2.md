@@ -18,7 +18,7 @@ OK, let's go:
     </component>
      ```
     Note the `<script>` tag. This is how you bind the UI to the logic. Also, this component extends `Scene`, a core component in the Roku  API. SceneGraph applications are intended to have one "Scene", and the visual screens are drawn as children of this component.  
-    Read more here: https://sdkdocs.roku.com/display/sdkdoc/Scene
+    Read more here: https://sdkdocs.roku.com/display/sdkdoc/Scene  
       _good link:_ https://developer.roku.com/en-gb/docs/references/scenegraph/scene.md
 
 1. Open `home_scene.brs` and add this code:
