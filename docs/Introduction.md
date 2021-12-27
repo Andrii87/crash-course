@@ -34,16 +34,15 @@ To access the debugger, you need port 8085 open on your local network.
 
 You must have telnet installed on your machine. It may not be included with OSX/macOS, if not then I suggest you installed homebrew (https://brew.sh/) and then use it to install telnet using `brew install telnet`  
 
-*Windows: telnet is not installed by default in Windows 10 machine, google how to install it.  *
+_Windows: telnet is not installed by default in Windows 10 machine, google how to install it._
 
 ## Links
-*
-in 2021 we use Visual Studio Code for development. It can upload your Roku app automatically to Roku Device, after installing extentions.
+
+_in 2021 we use Visual Studio Code for development. It can upload your Roku app automatically to Roku Device, after installing extentions._
 I extentions needed: 
 - BrightScript Language - Language support for BrightScript Language
 - Roku Development
 - XML
-*
 
 Older recomendations:
 For development, I recommend the Atom editor (atom.io) with the following packages:  
