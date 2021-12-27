@@ -39,7 +39,7 @@ _Windows: telnet is not installed by default in Windows 10 machine, google how t
 ## Links
 
 _in 2021 we use Visual Studio Code for development. It can upload your Roku app automatically to Roku Device, after installing extentions._
-I extentions needed: 
+Extentions needed: 
 - BrightScript Language - Language support for BrightScript Language
 - Roku Development
 - XML
