@@ -28,7 +28,8 @@ This course assumes you have already hooked up your Roku and enabled developer m
 For more information, go here: https://blog.roku.com/developer/developer-setup-guide  
 
 You need to have a web server hosting the `roku_lessons` content, found in the `server` directory. This directory contains JSON files of content feeds and some images. Personally I use MAMP installed on macOS because it's easy to use, see https://www.mamp.info.  
-You could use XAMPP, if you using Windows machine. https://www.apachefriends.org/
+
+You could use XAMPP, if you using Windows machine. Download it here: https://www.apachefriends.org/
 To access the debugger, you need port 8085 open on your local network.  
 
 You must have telnet installed on your machine. It may not be included with OSX/macOS, if not then I suggest you installed homebrew (https://brew.sh/) and then use it to install telnet using `brew install telnet`  
@@ -37,9 +38,9 @@ Windows: telnet is not installed by default in Windows 10 machine
 ## Links
 in 2021 we use Visual Studio Code for development. It can upload your Roku app automatically to Roku Device, after installing extentions.
 I extentions needed: 
--BrightScript Language - Language support for BrightScript Language
--Roku Development
--XML
+- BrightScript Language - Language support for BrightScript Language
+- Roku Development
+- XML
 
 Older recomendations:
 For development, I recommend the Atom editor (atom.io) with the following packages:  
