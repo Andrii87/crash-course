@@ -1,7 +1,9 @@
 # ROKU SCENEGRAPH CRASH COURSE
-First Edition  
-November 2017  
-Written using firmware version 8.0
+based on https://github.com/learnroku/crash-course  tutorial from 2017
+
+This is tutorial with simplified english. Some links were corrected, where needed. Code  stayed the same.  
+The goal of this work is to make english of this tutorial more understandable for non native english speakers.
+I try to explain the same with less sophisticated words.
 
 [Introduction](docs/Introduction.md)  
 [Lesson 1: Debugging, Sideloading, and Manifest](docs/Lesson1.md)  
@@ -16,6 +18,6 @@ Read the [Introduction](docs/Introduction.md) for detailed instructions on the f
 
 Each completed lesson is represented in this repository. For example, Lesson 2 code is in the `lesson_2` directory.
 
-All example thumbnails courtesy of https://unsplash.com/.
+All example thumbnails were given by https://unsplash.com/.
 
 .
