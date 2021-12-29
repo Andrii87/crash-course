@@ -91,9 +91,9 @@ The home_scene must be referenced by the application, so the main file needs upd
     </children>
     </component>
     ```
-    Notice the `translation` attribute. This defines the [x,y] coordinates for  placement, where [0,0] is the top left of the screen.
-If you increase x, thing goes to the right.
-If you increase y, thing goes down.
+    Notice the `translation` attribute. This defines the [x,y] coordinates for  placement, where [0,0] is the top left of the screen.  
+If you increase x, thing goes to the right.  
+If you increase y, thing goes down.  
  It is important to keep these values consistent for a single target resolution (for example, 1080p) throughout your application. Later on you will see how these values are interpreted by the device.  
 
 1. Open `components/home_scene.brs` again and add this code:
