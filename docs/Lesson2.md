@@ -2,11 +2,12 @@
 ## Screen, Components, and Resolution
 
 In this lesson we will add a screen to the application to demonstrate the fundamentals of SceneGraph.
-Screens require 2 files, an XML file for the UI and a BrightScript (brs) file for the application logic. The convention is to use the same name for both, for example `myscreen.xml` and `myscreen.brs`. While it is legal to put the BrightScript code in the XML file, it is an awful thing to do. It is difficult to maintain and just ugly.
+Screens require 2 files, an XML file for the UI and a BrightScript (brs) file for the application logic. The convention is to use the same name for both, for example `myscreen.xml` and `myscreen.brs`. While you could put the BrightScript code in the XML file, you should not, it is an awful thing to do.   
+It is difficult to read and it looks ugly.
 
 OK, let's go:
 
-1. Create a directory called `components` in your project  
+1. Create a folder called `components` in your project  
 
 1. Add 2 files: `home_scene.xml` and `home_scene.brs`
 
@@ -17,7 +18,7 @@ OK, let's go:
         <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
     </component>
      ```
-    Note the `<script>` tag. This is how you bind the UI to the logic. Also, this component extends `Scene`, a core component in the Roku  API. SceneGraph applications are intended to have one "Scene", and the visual screens are drawn as children of this component.  
+    Look at the `<script>` tag. This is how you bind the UI to the logic. Also, this component extends `Scene`, a core component in the Roku  API. SceneGraph applications are intended to have one "Scene", and the visual screens are drawn as children of this component.  
     Read more here: https://sdkdocs.roku.com/display/sdkdoc/Scene  
       _good link:_ https://developer.roku.com/en-gb/docs/references/scenegraph/scene.md
 
@@ -33,7 +34,7 @@ OK, let's go:
     ------ Running dev 'Roku Lesson 2' main ------
     [home_scene] init
     ```
-    Every SceneGraph component must define an `init()` function. This is called by the firmware whenever an instance of the component is created.  
+    Every SceneGraph component must have an `init()` function. This is called by the Roku Device whenever an instance of the component is created.  
 
 1. When you run the application, the splash screen appears, but the application immediately closes. We need to add logic to keep the app running until it is closed with the remote.  
 The home_scene must be referenced by the application, so the main file needs updates. Navigate to `source/main.brs` and update it:
@@ -44,7 +45,7 @@ The home_scene must be referenced by the application, so the main file needs upd
     	screen.Show()
     end sub
     ```
-    `screen` is a core component of a SceneGraph application, and there should only ever be one. The UI defined in the application will be attached to this screen.  
+    `screen` is a core component of a SceneGraph application, and there should be only one screen. The UI defined in the application will be attached to this screen.  
     `scene = screen.createScene("home_scene")` creates an instance of the component defined in `components/home_scene.xml`.  
     `screen.Show()` triggers the rendering of the components.  
     Continue to edit the file:
@@ -64,7 +65,7 @@ The home_scene must be referenced by the application, so the main file needs upd
     end sub
     ```
     `m.port` is an mechanism to read events from an object. When coupled with a loop, the application can capture information as the clock runs.  
-    The `while` loop is, uh, strange. Fundamentally, this loop keeps the main() function open during the execution of the application. Keep in mind that the HOME button press on the remote will nuke your application without any warning or message.  
+    The `while` loop is, uh, strange. Fundamentally, this loop keeps the main() function open during the execution of the application. Keep in mind that the HOME button press on the remote will nuke(shut down) your application without any warning or message.  
     Read more here:  
     https://sdkdocs.roku.com/display/sdkdoc/Event+Loops, https://sdkdocs.roku.com/display/sdkdoc/ifMessagePort
 
