@@ -18,7 +18,7 @@ Requirements:
 As of November 2017, the Roku does not have an emulator (and I doubt one is coming any time soon).  You must have a physical device, running where you can access its IP address, to launch and debug applications. Furthermore, there is no compiler, at least not on your development machine. Code is written in XML and Roku's proprietary language called BrightScript. Code and assets are compressed into a plain old zip file and sent to the device. Once loaded on the device, some compilation happens and egregious mistakes in syntax should be caught.  
 
 SceneGraph apps are a mix of XML and BrightScript. BS is loosely typed, similar to JavaScript, but uses a syntax similar to Visual Basic. In general, the user interface elements are defined in XML files and the application logic is defined in the BrightScript `.brs` files.  
-One important thing to note about BrightScript: it is case-insensitive. For example, a function defined as `function getChild()` can be accessed using `getchild()` or `GetChild()` or `gEtChIlD()`. The demos provided by Roku have a range of styles, with little consistency. I try to keep my property names and functions all-lowercase with underscores, but I'm not entirely consistent either.  
+One important thing to note about BrightScript: it is not case-sensitive. For example, a function defined as `function getChild()` can be accessed using `getchild()` or `GetChild()` or `gEtChIlD()`. The demos provided by Roku have a range of styles, with little consistency. I try to keep my property names and functions all-lowercase with underscores, but I'm not entirely consistent either.  
 
 As for events, the design implemented by Roku is called "field observers", which is introduced in Lesson 3.  
 
