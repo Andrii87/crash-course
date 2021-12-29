@@ -44,8 +44,7 @@ Extentions needed:
 - Roku Development
 - XML
 
-Older recomendations:
-For development, I recommend the Atom editor (atom.io) with the following packages:  
+Original tutorial from 2017 recomends Atom editor (atom.io) with the following packages:  
 https://atom.io/packages/roku-develop  
 https://atom.io/packages/language-brightscript  
 https://atom.io/packages/platformio-ide-terminal  
