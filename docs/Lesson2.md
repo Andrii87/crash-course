@@ -47,7 +47,7 @@ The home_scene must be referenced by the application, so the main file needs upd
     `screen` is a core component of a SceneGraph application, and there should be only one screen. The UI defined in the application will be attached to this screen.  
     `scene = screen.createScene("home_scene")` creates an instance of the component defined in `components/home_scene.xml`.  
     `screen.Show()` triggers the rendering of the components.  
-    Continue to edit the file:
+    Continue to edit the `main.brs` file:
     ```
     sub main()
     	screen = createObject("roSGScreen")
