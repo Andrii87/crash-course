@@ -48,7 +48,7 @@ OK, let's go:
     end function
     ```
     If you try to run app, it wont work.
-to correct it go to home_scene.xml and declare category_screen element inside <children> tag
+to correct it go to home_scene.xml and declare category_screen element inside children tag
  
     
      ```  
