@@ -47,6 +47,15 @@ OK, let's go:
     	m.center_square.setFocus(true)
     end function
     ```
+    If you try to run app, it wont work.
+to correct it go to home_scene.xml and declare category_screen element inside <children> tag
+ 
+    
+     ```  
+    <category_screen
+      id="category_screen"
+     />
+    ```
 1. Save and run the app. It's pretty lame, nothing happens and the category list is empty. Go back to `category_screen.xml` and make this change:
 
     ``` xml
