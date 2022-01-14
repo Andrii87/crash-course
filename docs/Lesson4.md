@@ -184,6 +184,8 @@ OK, let's go:
     ```
     Check the results:  
     <img src="screenshots/l4_contentscreen.png" width="400"/>
+    
+    If here code doesn't work, go and *check ip adreses* in your json files on your server
 
     Notice how almost all the application logic is now centralized in the home scene. You could think of the home scene as the "controller" in a Model View Controller architecture.  As the course progresses, most of the additional functionality will be added here.
 
