@@ -21,3 +21,6 @@ Each completed lesson is represented in this repository. For example, Lesson 2 c
 All example thumbnails were given by https://unsplash.com/.
 
 .
+
+If screen resolution does not fit roku: here is what you can do to change it:
+home down down ok down down down ok up ok
